@@ -1,0 +1,15 @@
+---
+layout: post
+title: "p-oct2-test"
+date: 2016-04-12 17:47:59 +0200
+comments: true
+categories:[test] 
+---
+
+```
+おまけ：チームでブログを管理する方法
+```
+
+
+`good`-desu
+
