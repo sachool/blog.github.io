@@ -2,12 +2,12 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://sachool.github.io/sachool-engineering-blog
+url: https://sachool.jp/blog
 title: Sachool Engineering Blog
-subtitle: 
+subtitle: エンジニアへの道 -プログラミング学習の記録
 author: Sackle
 simple_search: https://www.google.com/search
-description:
+description: エンジニアの学習の記録です。主に新入社員が更新していきます。
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -27,7 +27,7 @@ email:
 
 # If publishing to a subdirectory as in http://site.com/project set 'root: /project'
 root: /blog
-permalink: /entry/:year/:month/:day-:title
+permalink: /entry/:year/:month/:day-:title/
 source: source
 destination: public/blog
 plugins: plugins
@@ -42,7 +42,7 @@ rdiscount:
 highlighter: pygments # default python pygments have been replaced by pygments.rb
 
 paginate: 10          # Posts per page on the blog index
-paginate_path: "posts/:num"  # Directory base for pagination URLs eg. /posts/2/
+paginate_path: "posts/:num/"  # Directory base for pagination URLs eg. /posts/2/
 recent_posts: 5       # Posts in the sidebar Recent Posts section
 excerpt_link: "Read on &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
 excerpt_separator: "<!--more-->"
