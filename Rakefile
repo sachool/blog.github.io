@@ -86,11 +86,11 @@ task :preview do
   thinPid = Process.spawn("thin start --port #{server_port}")
 
   trap("INT") {
-    [thinPid, compassPid, rackupPid].each { |pid| Process.kill(9, pid) rescue Errno::ESRCH }
+    [jekyllPid, compassPid, thinPid].each { |pid| Process.kill(9, pid) rescue Errno::ESRCH }
     exit 0
   }
 
-  [thinPid, compassPid, rackupPid].each { |pid| Process.wait(pid) }
+  [jekyllPid, compassPid, thinPid].each { |pid| Process.wait(pid) }
 end
 
 # usage rake new_post[my-new-post] or rake new_post['my new post'] or rake new_post (defaults to "new-post")
