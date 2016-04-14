@@ -1,7 +1,7 @@
 require "rubygems"
 require "bundler/setup"
 require "stringex"
-
+require "zipang"
 ## -- Rsync Deploy config -- ##
 # Be sure your public key is listed in your server's ~/.ssh/authorized_keys file
 ssh_user       = "user@domain.com"
@@ -103,7 +103,7 @@ task :new_post, :title do |t, args|
   end
   raise "### You haven't set anything up yet. First run `rake install` to set up an Octopress theme." unless File.directory?(source_dir)
   mkdir_p "#{source_dir}/#{posts_dir}"
-  filename = "#{source_dir}/#{posts_dir}/#{Time.now.strftime('%Y-%m-%d')}-#{title.to_url}.#{new_post_ext}"
+  filename = "#{source_dir}/#{posts_dir}/#{Time.now.strftime('%Y-%m-%d')}-#{Zipang.to_slug(title).to_url}.#{new_post_ext}"
   if File.exist?(filename)
     abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
   end
@@ -136,8 +136,8 @@ task :new_page, :filename do |t, args|
       filename = "index"
     end
     extension ||= new_page_ext
-    page_dir = page_dir.map! { |d| d = d.to_url }.join('/')                # Sanitize path
-    filename = filename.downcase.to_url
+    page_dir = page_dir.map! { |d| d = Zipang.to_slug(d).to_url }.join('/')                # Sanitize path
+    filename = Zipang.to_slug(filename.downcase).to_url
 
     mkdir_p page_dir
     file = "#{page_dir}/#{filename}.#{extension}"
