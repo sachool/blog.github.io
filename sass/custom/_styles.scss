@@ -1,12 +1,25 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
 
+body {
+  font-family: 'Noto Sans Japanese', serif;
+}
+.noto100 {font-weight:100;}
+.noto200 {font-weight:200;}
+.noto300 {font-weight:300;}
+.noto400 {font-weight:400;}
+.noto500 {font-weight:500;}
+.noto600 {font-weight:600;}
+.noto700 {font-weight:700;}
+.noto800 {font-weight:800;}
+.noto900 {font-weight:900;}
+
 body>header  {
   background: #ff9900;
 }
 
 h1,h2,h3,h4,h5 {
-  color: #fff;
+  color: #6B6B6B;
 }
 
 body>header h2 {
