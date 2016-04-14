@@ -1,4 +1,5 @@
-{% capture date %}{{ page.date }}{{ post.date }}{% endcapture %}
+{%if page.date %}{% capture time %}{{ page.date_time_html}}{% endcapture%}{% endif %}
+{%if post.date %}{% capture time %}{{ post.date_time_html}}{% endcapture %}{% endif %}
 {% capture date_formatted %}{{ page.date_formatted }}{{ post.date_formatted }}{% endcapture %}
 {% capture has_date %}{{ date | size }}{% endcapture %}
 
