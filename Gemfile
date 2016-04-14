@@ -15,6 +15,9 @@ group :development do
   gem 'rb-fsevent', '~> 0.9'
   gem 'stringex', '~> 1.4.0'
   gem 'thin', '~> 1.5.0'
+  gem 'zipang'
+  gem 'kuromoji'
+  gem 'romaji'
 end
 
 gem 'sinatra', '~> 1.4.2'
