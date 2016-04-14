@@ -46,3 +46,20 @@ section h1 {
   color: #ff9900;
 }
 
+article>footer p.meta{
+ text-align: right;
+}
+
+article>footer p.meta span.categories {
+  padding-left: 20px;
+  padding-right: 10px;
+  background: url(../images/tag_icon.png) no-repeat left;
+}
+
+article>footer p.meta span.byline {
+ padding-left: 20px;
+ padding-right: 10px;
+ background: url(../images/user_icon.png) no-repeat left;
+}
+
+
