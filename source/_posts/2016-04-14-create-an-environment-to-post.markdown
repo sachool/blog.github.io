@@ -25,7 +25,7 @@ CUIをバリバリ使う姿はかっこいいと思います！
 ###VagrantにBOXファイルを追加する
 
 ```
-$ vagrant box add BOX_FILE_URL BOX_NAME
+$ vagrant box add BOX_NAME BOX_FILE_URL
 ```
 
 `BOX_FILE_URL`にはBOXファイルがある場所を入力してください。  
