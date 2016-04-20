@@ -20,7 +20,7 @@
 #                          'Category: ').
 
 require 'stringex'
-
+require 'zipang'
 module Jekyll
 
   # The CategoryIndex class creates a single category page for the specified category.
@@ -108,7 +108,7 @@ module Jekyll
       if self.layouts.key? 'category_index'
         dir = self.config['category_dir'] || 'categories'
         self.categories.keys.each do |category|
-          self.write_category_index(File.join(dir, category.to_url), category)
+          self.write_category_index(File.join(dir, Zipang.to_slug(category).to_url), category)
         end
 
       # Throw an exception if the layout couldn't be found.
@@ -164,7 +164,7 @@ ERR
     #
     def category_link(category)
       dir = @context.registers[:site].config['category_dir']
-      "<a class='category' href='/#{dir}/#{category.to_url}/'>#{category}</a>"
+      "<a class='category' href='/#{dir}/#{Zipang.to_slug(category).to_url}/'>#{category}</a>"
     end
 
     # Outputs the post.date as formatted html, with hooks for CSS styling.
