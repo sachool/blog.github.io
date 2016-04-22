@@ -8,6 +8,8 @@ descriptions:
 keywords: 
 ---
 
+こんにちは、仙台ファクトリーのkish(@31_kish)です。  
+
 CentOS7をインストールした直後から  
 Octopressをプレビューできるまでの手順を紹介します。
 

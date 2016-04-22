@@ -8,6 +8,8 @@ descriptions:
 keywords: 
 ---
 
+こんにちは、仙台ファクトリーのkish(@31_kish)です。  
+
 ブログを投稿する環境の作り方を紹介します。  
 配布したBOXファイルを使ってVagrantを立ち上げ、仮想環境のLinuxを操作します。  
 

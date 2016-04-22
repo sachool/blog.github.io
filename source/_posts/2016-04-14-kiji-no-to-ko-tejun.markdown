@@ -8,10 +8,13 @@ description: Octopressへの投稿手順について
 keywords: ['Octopressへの投稿']
 ---
 
-このブログは「Octopress」を利用しています。  
-「Octopress」で記事を書くときは基本的にMarkdown記法を使います。  
+こんにちは、仙台ファクトリーのkish(@31_kish)です。  
+まずはブログについて簡単にご紹介します。  
+
+このブログは`Octopress`を利用しています。  
+`Octopress`で記事を書くときは基本的にMarkdown記法を使います。  
 Markdown記法については[こちら](http://kojika17.com/2013/01/starting-markdown.html)が参考になります。  
-学んだことを積極的にアウトプットしていきましょう！  
+学んだことを積極的にアウトプットしていきたいと思います！  
 
 実際の記事の書き方を紹介します。
 
