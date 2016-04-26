@@ -6,6 +6,7 @@ comments: true
 categories: Octopress
 description: Octopressへの投稿手順について
 keywords: ['Octopressへの投稿']
+author: kish
 ---
 
 こんにちは、仙台ファクトリーのkish(@31_kish)です。  

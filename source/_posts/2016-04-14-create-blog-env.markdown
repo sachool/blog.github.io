@@ -6,6 +6,7 @@ comments: true
 categories: ['Vagrant', 'Linux']
 descriptions: 
 keywords: 
+author: kish
 ---
 
 こんにちは、仙台ファクトリーのkish(@31_kish)です。  
