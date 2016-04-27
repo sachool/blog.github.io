@@ -23,7 +23,7 @@ h1,h2,h3,h4,h5 {
 }
 
 body>header h2 {
- color: #f2f2f2;
+  color: #f2f2f2;
 }
 
 body>header h1 a {
@@ -47,7 +47,7 @@ section h1 {
 }
 
 article>footer p.meta{
- text-align: right;
+  text-align: right;
 }
 
 article>footer p.meta span.categories {
@@ -57,13 +57,102 @@ article>footer p.meta span.categories {
 }
 
 article>footer p.meta span.byline {
- padding-left: 20px;
- padding-right: 10px;
- background: url(../images/user_icon.png) no-repeat left;
+  padding-left: 20px;
+  padding-right: 10px;
+  background: url(../images/user_icon.png) no-repeat left;
 }
 
 
 ul>li {
- margin-left: 25px;
+  margin-left: 25px;
 }
 
+#content div.pagination a {
+  color: #ff9900;
+}
+
+/* --- */
+// Hidden Old Responsive Menu
+body>nav fieldset.mobile-nav {
+  display: none;
+}
+fieldset>select {
+  width: 100%;
+}
+/* --- */
+
+// New Responsive Menu
+body>nav ul.main-navigation {
+  display: none;
+  list-style: none;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+body>nav ul.main-navigation li {
+  width: 100%;
+  margin-left: 0;
+}
+body>nav ul.main-navigation li a {
+  display: block;
+  padding: 12px 0 10px;
+  background: #fff;
+  color: #ff9900;
+  text-align: center;
+  text-decoration: none;
+  border-top: 1px dotted #ff9900;
+}
+
+#toggle {
+  display: block;
+  position: relative;
+  width: 100%;
+  background: #fff;
+}
+
+#toggle a {
+  display: block;
+  position: relative;
+  padding: 5px 0 5px;
+  border-bottom: 1px solid #fff;
+  color: #ff9900;
+  text-align: center;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 550px) {
+div#toggle a {
+   display: none;
+ }
+
+body>nav ul.main-navigation {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   overflow: hidden;
+   float:left;
+   display: block;
+   padding-top: .15em;
+ }
+
+body>nav ul.main-navigation li {
+  width: auto;
+ }
+
+body>nav ul.main-navigation li a {
+  border-top:none;
+  color: #6b6b6b;
+  padding: 0;
+ }
+
+body>nav ul.main-navigation li+li {
+  border-left: 1px solid #b0b0b0;
+  margin-left: .8em;
+ }
+
+body>nav ul.main-navigation  li+li a {
+  padding: 0;
+  padding-left: .8em;
+ }
+
+}
