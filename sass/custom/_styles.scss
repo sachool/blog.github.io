@@ -67,12 +67,13 @@ ul>li {
   margin-left: 25px;
 }
 
+// ページ下のSachoolのリンク
 #content div.pagination a {
   color: #ff9900;
 }
 
 /* --- */
-// Hidden Old Responsive Menu
+// 古いレスポンシブナビゲーションを隠す
 body>nav fieldset.mobile-nav {
   display: none;
 }
@@ -81,7 +82,7 @@ fieldset>select {
 }
 /* --- */
 
-// New Responsive Menu
+// 新しいレスポンシブナビゲーションのスタイル
 body>nav ul.main-navigation {
   display: none;
   list-style: none;
@@ -93,6 +94,7 @@ body>nav ul.main-navigation li {
   width: 100%;
   margin-left: 0;
 }
+
 body>nav ul.main-navigation li a {
   display: block;
   padding: 12px 0 10px;
