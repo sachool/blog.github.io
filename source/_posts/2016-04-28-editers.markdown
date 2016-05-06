@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "エディタ設定しをしてみた"
+title: "エディタ設定をしてみた"
 date: 2016-04-28 13:43:34 +0900
 comments: true
 categories:  
@@ -11,7 +11,7 @@ author: k_yoshida
 
 はじめまして、@k_yoshidaです。
 
-プログラムコードをを書くためにエディタが必要となります。
+プログラムコードを書くためにエディタが必要となります。
 
 なのでプログラマさんはエディタの知識が必須とも言えます。
 <!--  more -->
@@ -34,10 +34,11 @@ C#　Ruby　PHP　といった言語にも対応しています。
 既存設定は初期の設定ですので　設定を行う際はsetting.jsonに書いてオーバーライドし使用します。
 
 setting.json  
-  
+
 >{  
->	"editor.renderWhitespace": ture,   
+>	"editor.renderWhitespace": ture,  
 >}  
+
   
 
 Json形式で記述します。
