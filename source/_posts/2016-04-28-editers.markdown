@@ -19,7 +19,7 @@ author: k_yoshida
 
 VScodeは最近オープンソース化され誰でもダウンロード,改変,使用を行えるようになりました。
 
-['VScode'](https://code.visualstudio.com/)
+[VScode](https://code.visualstudio.com/)
 
 C#　Ruby　PHP　といった言語にも対応しています。
 
@@ -36,7 +36,7 @@ C#　Ruby　PHP　といった言語にも対応しています。
 setting.json  
 
 >{  
->	"editor.renderWhitespace": ture,  
+>	"editor.renderWhitespace": true,  
 >}  
 
   
@@ -46,4 +46,4 @@ Json形式で記述します。
 
 コード作成中に見てすぐわかるようになるので少しだけ幸せになりました。
 
-今回はここまでです。エディタを設定しておくと少しだけ楽になれるので,作業刷ることに合わせて設定を変えておけば楽になれます
+今回はここまでです。エディタを設定しておくと少しだけ楽になれるので,作業することに合わせて設定を変えておけば楽になれます
