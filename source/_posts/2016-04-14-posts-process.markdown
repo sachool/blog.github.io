@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "記事の投稿手順"
+title: "【Octopress】記事の投稿手順"
 date: 2016-04-14 12:19:09 +0900
 comments: true
 categories: Octopress

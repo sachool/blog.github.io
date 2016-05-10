@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "ブログの投稿環境をつくる"
+title: "【Vagrant】ブログの投稿環境をつくる"
 date: 2016-04-14 17:53:48 +0900
 comments: true
 categories: ['Vagrant', 'Linux']
