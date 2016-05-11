@@ -74,7 +74,7 @@ $ vagrant box add [Box名] [BoxのURL]
 $ vagrant box add centos http://github.com/~~~/centos.box
 
 例：boxファイルをフォルダから指定する場合
-$ vagrant box add centos C:/Users/{ユーザー名}/centos.box
+$ vagrant box add centos C:/Users/[ユーザー名]/centos.box
 ```
 
 
@@ -84,7 +84,7 @@ $ vagrant box list
 ```
 と入力し、
 ```
-centos
+[Box名]
 ```
 と表示されればVagrantへのBOXの追加は完了です。
 
@@ -109,7 +109,7 @@ $ cd centos
 ```
 $ vagrant init [Box名]
 例
-$ vagrant init cents
+$ vagrant init centos
 ```
 これで、centosフォルダ上に1.で追加したboxファイルを起動するように設定されたvagrantfileが作成されます。
 
@@ -149,4 +149,4 @@ $ vagrant destroy
 自動化できるところは自動化して生産性UP!
 
 
-今回は以上です。-
+今回は以上です。
