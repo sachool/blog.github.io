@@ -44,7 +44,7 @@ Vagrantを利用することで次のことが実現できます。
 
 
 ## ２．事前準備
-- [VirtualBox公式サイト]()より、OSに合ったVirtualBoxをダウンロードしインストール
+- [VirtualBox公式サイト](https://www.virtualbox.org/)より、OSに合ったVirtualBoxをダウンロードしインストール
 - [Vagrant公式サイト](https://www.vagrantup.com/l)より、OSに合ったVagrantをダウンロードしインストール
 - [Vagrantbox.es](http://)（＊1）より、必要なboxファイルをダウンロードorリンクの取得
 
