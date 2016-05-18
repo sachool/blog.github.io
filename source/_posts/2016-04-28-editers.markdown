@@ -9,7 +9,7 @@ keywords: [VScode]
 author: k_yoshida
 ---
 
-はじめまして、@k_yoshidaです。
+はじめまして、k&#95;yoshidaです。
 
 プログラムコードを書くためにエディタが必要となります。
 

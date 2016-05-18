@@ -9,7 +9,7 @@ keywords:  アルゴリズム　フローチャート
 author: k_yoshida 
 ---
 
-はじめましてk_yoshidaです。
+はじめましてk&#95;yoshidaです。
 電卓を作成する課題取り組みを行いました。
 
 <!-- more -->
