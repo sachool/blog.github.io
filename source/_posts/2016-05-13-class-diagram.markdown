@@ -3,7 +3,7 @@ layout: post
 title: "【課題】ビデオカメラのクラス図を考える"
 date: 2016-05-13 09:25:57 +0900
 comments: true
-categories: work,クラス図
+categories: [work,クラス図]
 descriptions: 
 keywords: 
 author: kish
