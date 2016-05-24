@@ -133,5 +133,5 @@ $ vim .gitconfig
 `name`と`email`を自分のものに変更してください。
 
 以上で投稿する環境が整いました！  
-投稿する手順については[こちら](../kiji-no-to-ko-tejun/)  
+投稿する手順については[こちら](../posts-process/)  
 
