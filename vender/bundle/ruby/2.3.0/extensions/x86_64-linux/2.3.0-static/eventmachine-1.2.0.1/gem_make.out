@@ -1,0 +1,24 @@
+current directory: /home/vagrant/sachool-engineering-blog/vender/bundle/ruby/2.3.0/gems/eventmachine-1.2.0.1/ext/fastfilereader
+/home/vagrant/.rbenv/versions/2.3.0/bin/ruby -r ./siteconf20160602-3724-yxjjze.rb extconf.rb
+creating Makefile
+
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /home/vagrant/sachool-engineering-blog/vender/bundle/ruby/2.3.0/extensions/x86_64-linux/2.3.0-static/eventmachine-1.2.0.1/mkmf.log
+
+current directory: /home/vagrant/sachool-engineering-blog/vender/bundle/ruby/2.3.0/gems/eventmachine-1.2.0.1/ext/fastfilereader
+make "DESTDIR=" clean
+
+current directory: /home/vagrant/sachool-engineering-blog/vender/bundle/ruby/2.3.0/gems/eventmachine-1.2.0.1/ext/fastfilereader
+make "DESTDIR="
+compiling mapper.cpp
+cc1plus: 警告: command line option "-Wdeclaration-after-statement" is valid for C/ObjC but not for C++
+cc1plus: 警告: command line option "-Wimplicit-function-declaration" is valid for C/ObjC but not for C++
+compiling rubymain.cpp
+cc1plus: 警告: command line option "-Wdeclaration-after-statement" is valid for C/ObjC but not for C++
+cc1plus: 警告: command line option "-Wimplicit-function-declaration" is valid for C/ObjC but not for C++
+linking shared-object fastfilereaderext.so
+
+current directory: /home/vagrant/sachool-engineering-blog/vender/bundle/ruby/2.3.0/gems/eventmachine-1.2.0.1/ext/fastfilereader
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 fastfilereaderext.so ./.gem.20160602-3724-12kduoz

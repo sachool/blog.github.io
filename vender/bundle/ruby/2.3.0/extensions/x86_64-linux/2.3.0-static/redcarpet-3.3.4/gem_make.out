@@ -1,0 +1,48 @@
+current directory: /home/vagrant/sachool-engineering-blog/vender/bundle/ruby/2.3.0/gems/redcarpet-3.3.4/ext/redcarpet
+/home/vagrant/.rbenv/versions/2.3.0/bin/ruby -r ./siteconf20160602-3724-h7hufd.rb extconf.rb
+creating Makefile
+
+current directory: /home/vagrant/sachool-engineering-blog/vender/bundle/ruby/2.3.0/gems/redcarpet-3.3.4/ext/redcarpet
+make "DESTDIR=" clean
+
+current directory: /home/vagrant/sachool-engineering-blog/vender/bundle/ruby/2.3.0/gems/redcarpet-3.3.4/ext/redcarpet
+make "DESTDIR="
+compiling buffer.c
+buffer.c: In function ‘bufcstr’:
+buffer.c:111: 警告: passing argument 1 of ‘bufgrow’ discards qualifiers from pointer target type
+buffer.c:60: note: expected ‘struct buf *’ but argument is of type ‘const struct buf *’
+compiling markdown.c
+markdown.c: In function ‘char_link’:
+markdown.c:1047: 警告: ISO C90 forbids mixed declarations and code
+markdown.c:1087: 警告: ISO C90 forbids mixed declarations and code
+markdown.c: In function ‘sd_markdown_render’:
+markdown.c:2820: 警告: ISO C90 forbids mixed declarations and code
+markdown.c:2838: 警告: passing argument 1 of ‘is_codefence’ discards qualifiers from pointer target type
+markdown.c:1391: note: expected ‘uint8_t *’ but argument is of type ‘const uint8_t *’
+markdown.c: トップレベル:
+markdown.c:94: 警告: ‘char_underline’ declared ‘static’ but never defined
+markdown.c:95: 警告: ‘char_highlight’ declared ‘static’ but never defined
+compiling rc_render.c
+compiling houdini_href_e.c
+compiling stack.c
+compiling autolink.c
+compiling html_smartypants.c
+html_smartypants.c: In function ‘squote_len’:
+html_smartypants.c:104: 警告: initialization discards qualifiers from pointer target type
+html_smartypants.c:104: 警告: initialization discards qualifiers from pointer target type
+html_smartypants.c:104: 警告: initialization discards qualifiers from pointer target type
+html_smartypants.c:104: 警告: initialization discards qualifiers from pointer target type
+html_smartypants.c: In function ‘smartypants_squote’:
+html_smartypants.c:149: 警告: 符合付きと符合無しの整数式同士の比較です
+html_smartypants.c: In function ‘smartypants_cb__amp’:
+html_smartypants.c:250: 警告: ISO C90 forbids mixed declarations and code
+compiling rc_markdown.c
+rc_markdown.c: In function ‘rb_redcarpet_md_render’:
+rc_markdown.c:132: 警告: ISO C90 forbids mixed declarations and code
+compiling houdini_html_e.c
+compiling html.c
+linking shared-object redcarpet.so
+
+current directory: /home/vagrant/sachool-engineering-blog/vender/bundle/ruby/2.3.0/gems/redcarpet-3.3.4/ext/redcarpet
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 redcarpet.so ./.gem.20160602-3724-1vs260y
