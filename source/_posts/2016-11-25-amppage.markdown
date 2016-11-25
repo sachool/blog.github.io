@@ -1,0 +1,88 @@
+---
+layout: post
+title: "AMP対応ページを作ってみた事"
+date: 2016-11-25 06:48:20 +0900
+comments: true
+categories: ['AMP','Google']
+descriptions: ['AMP','Google']
+keywords: ['AMP','Google']
+author: k_yoshida
+---
+スマートフォン対応のAMPページを作ってみた
+スマートフォンの普及に伴ってスマートフォンからWEBページを見る機会が増えてきました。
+パソコンのように固定回線を使って安定した通信を行える環境ではないので,スマートフォンでは小容量且つ見やすいサイトが求められてきます。
+<!--more-->
+
+### AMPとは
+Google社が提案しているOSS AMP(Accelerated Mobile Pages) [AMPproject](https://www.ampproject.org/ja/)
+スマートフォン向けのHTMLタグを容易していて,小容量,高速表示を行えるようにするためのツールです。
+
+昨年に公開されたばかりで,じわじわと発展,普及をしていくであろうと考えています。
+
+### AMPを使うと制限がかかるHTMLタグ
+AMPを使う事に伴って通信量を減らすためにCSSのサイズ制限,Javascriptの制限**HTMLタグ**の制限が設けられています
+
+```
+img  
+select  
+input  
+from  
+iframe  
+frame  
+option  
+…  
+```
+
+上記の他にも使えないタグがあります。
+使えなくなったといっても一部はAMP用のカスタムHTMLタグが存在します。
+たとえば  
+
+imgタグをAMPタグにした場合
+```
+<amp-img >...</amp-img>
+```
+iframeタグをAMPタグにした場合
+```
+<amp-iframe >...</amp-iframe>
+```
+
+上記のように変換することができます。AMPタグを使用するためにはAMP専用のjavascriptを読み込みが必要です。
+**amp-img**を使いたいときは
+
+```
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+
+<amp-img
+src="/hoge/image.png"
+width=100px
+height=100px
+layout="responsive"
+></amp-img>
+```
+layoutの情報,width,heightの値が必須になります。  
+画像サイズを固定すること,事前にレンダリングを行いアクションがあったときにレンダリングをさせずに表示できるようそうです。
+
+
+**amp-iframe**を使いたいときは
+```
+<script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+
+<amp-iframe
+width=400px
+height=600px
+layout="responsive"
+sandbox="allow-scripts allow-same-origin allow-popups"
+src="http://exsample.com"
+></amp-iframe>
+```
+上記もまたwidth,heightの指定が必須となっています。  
+sandboxの設定も必要になります。
+
+他にも[ドキュメント](https://ampbyexample.com)に記述されているので用途によって参考にすることができます。
+
+### AMPを使ってみて
+第一印象は,使えなくなるタグが多すぎて思っていたように扱いにくかったことです。
+画像の高さ,幅の指定が必須になったり,HTMLタグの構造がゴテゴテしていると感じました。クライアントからアクションが合ったときに画面のレンダリングをするのではなく、値がすでに有るため事前にレンダリングをした状態にして通信をしているみたいです。
+HTMLタグ制限のせいで心が折れかけました。
+使えないために違うアプローチをしなければならない場面に遭遇したり,「たすけてGoogleせんせー」としても音楽のアンプばっかりヒットして泣きそうでした。英語圏サイトでも思ったほどヒットが多くなかったです。
+まだまだ日本語ドキュメントが少ない状態です。昨年表に出てきたばかりの技術なので,発展途上の段階かと思います。これからも普及をしていけば、AMPを使う場面が増えるかもしれません。
