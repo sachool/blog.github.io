@@ -9,6 +9,6 @@ sass.old
 source.old
 source/_stash
 source/stylesheets/screen.css
-vendor
+vendor/bundle
 node_modules
 Gemfile.lock
