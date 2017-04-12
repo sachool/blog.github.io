@@ -18,6 +18,7 @@ group :development do
   gem 'zipang'
   gem 'kuromoji'
   gem 'romaji'
+  gem 'rjb', '~> 1.5', '>= 1.5.5'
 end
 
 gem 'sinatra', '~> 1.4.2'
